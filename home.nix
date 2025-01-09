@@ -4,6 +4,7 @@
 		packages = with pkgs; [
 			htop
 			bat
+			ripgrep
 		];
 
 		username = "pakis";

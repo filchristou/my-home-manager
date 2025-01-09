@@ -3,19 +3,18 @@
 	home = {
 		packages = with pkgs; [
 			htop
-			tmux
 		];
 
 		username = "pakis";
 		homeDirectory = "/home/pakis";
 
 		stateVersion = "23.11";
-
-		file = {
-			"hello.txt".text = "Hello, world!";
-		};
-
 	};
 
 	programs.home-manager.enable = true;
+
+	# more complex  packages
+	imports = [
+		./packages/tmux/tmux.nix
+	];
 }

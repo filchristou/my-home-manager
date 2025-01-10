@@ -18,5 +18,7 @@
 	# more complex  packages
 	imports = [
 		./packages/tmux/tmux.nix
+		./packages/fish/fish.nix
+		./packages/helix/helix.nix
 	];
 }

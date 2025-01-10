@@ -20,5 +20,6 @@
 		./packages/tmux/tmux.nix
 		./packages/fish/fish.nix
 		./packages/helix/helix.nix
+		./packages/zellij/zellij.nix
 	];
 }

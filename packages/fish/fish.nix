@@ -4,5 +4,14 @@
 
 	programs.fish = {
 		enable = true;
+
+		shellInit = ''
+			set PATH $PATH ~/.juliaup/bin/
+		'';
+
+		shellAbbrs = {
+			"j"	= "julia";
+			"z" = "zellij";
+		};
 	};
 }

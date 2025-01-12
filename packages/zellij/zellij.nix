@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-unstable, home-manager-unstable, ... }:
 {
-	home.packages = [ pkgs.zellij ];
+	home.packages = [ pkgs-unstable.zellij ];
 
-	programs.zellij = {
-		enable = true;
-	};
+	# programs.zellij = {
+	# 	enable = true;
+	# };
 }

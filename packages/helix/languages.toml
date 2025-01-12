@@ -1,0 +1,14 @@
+[[language]]
+name = "julia"
+scope = "source.julia"
+injection-regex = "julia"
+file-types = ["jl"]
+roots = ["Project.toml", "Manifest.toml", "JuliaProject"]
+comment-token = "#"
+language-servers = ["julia-lsp"]
+indent = {tab-width=4, unit = "    "}
+
+[language-server.julia-lsp]
+command = "julia"
+timeout = 60
+args = ["--startup-file=no", "--project=@helix-lsp", "-e", "using LanguageServer; runserver();"]

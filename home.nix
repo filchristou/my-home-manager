@@ -7,6 +7,9 @@
 			ripgrep
 			nmap
 			xclip
+			fzf
+			fd
+			
 			# pkgs-unstable.zellij
 		]) 
 		++

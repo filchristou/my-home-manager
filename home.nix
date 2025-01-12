@@ -6,6 +6,7 @@
 			bat
 			ripgrep
 			nmap
+			xclip
 			# pkgs-unstable.zellij
 		]) 
 		++

@@ -15,6 +15,7 @@
 		};
 
 		shellAliases = {
+			"jp" = "julia --project";
 			"gits" = "git status -s";
 			"gitlog" = "git log --graph --oneline --decorate --all";
 		};

@@ -14,6 +14,11 @@
 			"z" = "zellij";
 		};
 
+		shellAliases = {
+			"gits" = "git status -s";
+			"gitlog" = "git log --graph --oneline --decorate --all";
+		};
+
 		plugins = [
 			{
 				name = "fzf.fish";

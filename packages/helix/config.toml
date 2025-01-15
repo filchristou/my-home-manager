@@ -2,3 +2,8 @@
 line-number = "relative"
 bufferline = "always"
 
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+X = "select_line_above"

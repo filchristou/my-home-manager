@@ -1,4 +1,7 @@
 { lib, pkgs, pkgs-unstable, home-manager-unstable,  ...}:
+let 
+	username = "pakis";
+in
 {
 	home = {
 		packages = (with pkgs; [
@@ -9,7 +12,6 @@
 			xclip
 			fzf
 			fd
-			
 			# pkgs-unstable.zellij
 		]) 
 		++
@@ -17,8 +19,8 @@
 			# zellij
 		]);
 
-		username = "pakis";
-		homeDirectory = "/home/pakis";
+		inherit username;
+		homeDirectory = "/home/${username}";
 
 		stateVersion = "24.05";
 	};
@@ -32,4 +34,7 @@
 		./packages/helix/helix.nix
 		./packages/zellij/zellij.nix
 	];
+
+
+	# users.users.${username}.extraGroups = [ "docker" ];
 }
